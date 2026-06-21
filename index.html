@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Pizzeria Kebab — Alcázar de San Juan</title>
+  <meta name="description" content="La mejor pizza y kebab de Alcázar de San Juan. Siempre frescos, siempre ricos. Llámanos al 631 111 930.">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo"><i class="ti ti-pizza" aria-hidden="true"></i> Ali Pizzeria Kebab</div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#sobre">Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="tel:631111930" class="btn-nav"><i class="ti ti-phone" aria-hidden="true"></i> 631 111 930</a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#sobre">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+<h1>Pizza & Kebab</h1>
+      <p class="hero-slogan">Siempre frescos, siempre ricos</p>
+      <p class="hero-sub">Alcázar de San Juan, Ciudad Real</p>
+      <div class="hero-btns">
+        <a href="tel:631111930" class="btn-primary">Llamar ahora</a>
+        <a href="https://wa.me/34631111930" class="btn-secondary" target="_blank">WhatsApp</a>
+      </div>
+      <div class="hero-services">
+        <span><i class="ti ti-building-store" aria-hidden="true"></i> Comer aquí</span>
+        <span><i class="ti ti-moped" aria-hidden="true"></i> Delivery</span>
+        <span><i class="ti ti-package" aria-hidden="true"></i> Para llevar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="about" id="sobre">
+    <div class="container about-inner">
+      <div class="about-text">
+        <span class="section-label">Nuestra historia</span>
+        <h2>Hecho con pasión desde Pakistán</h2>
+        <p>Ali lleva más de 15 años en el mundo de la hostelería, trayendo consigo la auténtica tradición culinaria de Pakistán. En Ali Pizzeria Kebab encontrarás sabores únicos preparados con ingredientes frescos y mucho cariño.</p>
+        <p>Desde el primer día, nuestro objetivo ha sido simple: darte la mejor comida posible, con una atención cercana y un ambiente acogedor.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">15+</span><span>Años de experiencia</span></div>
+          <div class="stat"><span class="stat-num">4.8 ★</span><span>Valoración Google</span></div>
+          <div class="stat"><span class="stat-num">3</span><span>Servicios disponibles</span></div>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="img/chef.jpg" alt="Ali con una pizza recién hecha">
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <span class="section-label">Lo que ofrecemos</span>
+      <h2>Nuestro menú</h2>
+      <p class="section-sub">Todo preparado al momento con ingredientes frescos</p>
+
+      <div class="menu-pdf-btn">
+        <a href="menu.html" target="_blank" class="btn-menu-pdf"><i class="ti ti-file-type-pdf"></i> Ver menú completo en PDF</a>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="kebab"><i class="ti ti-meat"></i> Kebab</button>
+        <button class="tab" data-tab="pizza"><i class="ti ti-pizza"></i> Pizza</button>
+        <button class="tab" data-tab="extras"><i class="ti ti-salad"></i> Extras</button>
+        <button class="tab" data-tab="menus"><i class="ti ti-tools-kitchen-2"></i> Menús</button>
+      </div>
+
+      <!-- KEBAB -->
+      <div class="menu-grid" id="tab-kebab">
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Kebab Ternera, Mixto o Pollo</h3></div>
+          <p>Pan tostado, ternera, pollo o mixto, lechuga, tomate, cebolla y salsas</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">4,50€</span><span class="price-label">Grande</span><span class="price">5,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Durum Ternera, Mixto o Pollo</h3></div>
+          <p>Pan tostado, ternera, pollo o mixto, lechuga, tomate, cebolla y salsas</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">4,50€</span><span class="price-label">Grande</span><span class="price">5,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Polo Carne</h3></div>
+          <p>Pan kebab o durum, ternera o mixto y salsas</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">5,00€</span><span class="price-label">Grande</span><span class="price">6,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Polo Pollo</h3></div>
+          <p>Pan kebab o durum, pollo y salsas</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">5,50€</span><span class="price-label">Grande</span><span class="price">6,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Durum Carne y Patatas</h3></div>
+          <p>Durum con carne y patatas fritas</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">5,50€</span><span class="price-label">Grande</span><span class="price">6,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Durum Gratinado</h3></div>
+          <p>Durum, lechuga, tomate y cebolla</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">6,50€</span><span class="price-label">Grande</span><span class="price">7,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Durum Gratinado Solo Carne</h3></div>
+          <p>Durum gratinado únicamente con carne</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">7,50€</span><span class="price-label">Grande</span><span class="price">8,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Tacos</h3></div>
+          <p>Tacos de carne al estilo de la casa</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">6,50€</span><span class="price-label">Grande</span><span class="price">7,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Kebab Roll Pollo</h3></div>
+          <p>Roll de pollo con salsas</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">5,00€</span></div>
+        </div>
+      </div>
+
+      <!-- PIZZA -->
+      <div class="menu-grid hidden" id="tab-pizza">
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Pizza Atún</h3></div>
+          <p>Masa, tomate, queso, atún y orégano</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">11,00€</span><span class="price-label">Familiar</span><span class="price">15,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Pizza Margarita</h3></div>
+          <p>Masa, tomate, mozzarella y orégano</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">11,00€</span><span class="price-label">Familiar</span><span class="price">15,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Pizza 4 Quesos</h3></div>
+          <p>Cuatro tipos de queso sobre masa crujiente</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">11,00€</span><span class="price-label">Familiar</span><span class="price">15,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Pizza Barbacoa</h3></div>
+          <p>Carne, queso, cebolla y salsa barbacoa</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">11,00€</span><span class="price-label">Familiar</span><span class="price">15,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Pizza Carne Picada</h3></div>
+          <p>Carne picada, queso y orégano</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">11,00€</span><span class="price-label">Familiar</span><span class="price">15,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>Pizza Kebab ⭐</h3></div>
+          <p>Nuestra especialidad — carne kebab, verduras y salsa especial sobre masa crujiente</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">11,00€</span><span class="price-label">Familiar</span><span class="price">15,00€</span></div>
+        </div>
+      </div>
+
+      <!-- EXTRAS -->
+      <div class="menu-grid hidden" id="tab-extras">
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Solo Patatas</h3></div>
+          <p>Patatas fritas</p>
+          <div class="price-row"><span class="price-label">Pequeña</span><span class="price">2,50€</span><span class="price-label">Mediana</span><span class="price">3,50€</span><span class="price-label">Grande</span><span class="price">4,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Patatas con Carne</h3></div>
+          <p>Patatas fritas con carne kebab</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">4,50€</span><span class="price-label">Box</span><span class="price">5,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Ensalada</h3></div>
+          <p>Lechuga, tomate, cebolla, olivas y queso</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">4,50€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Ensalada de Arroz</h3></div>
+          <p>Lechuga, tomate, cebolla, pepino y arroz — con queso</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">5,00€</span><span class="price-label">Grande</span><span class="price">6,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Arroz Pollo Frito</h3></div>
+          <p>Arroz con pollo frito al estilo de la casa</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">5,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Samosas Pollo</h3></div>
+          <p>4 unidades de samosas de pollo</p>
+          <div class="price-row"><span class="price-label">4 Uds.</span><span class="price">5,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Alitas de Pollo</h3></div>
+          <p>Alitas crujientes con salsa a elegir</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">5,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Nuggets</h3></div>
+          <p>8 nuggets de pollo crujientes</p>
+          <div class="price-row"><span class="price-label">8 Uds.</span><span class="price">5,00€</span></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header"><h3>Burger Normal</h3></div>
+          <p>Pan tostado, pollo, lechuga, tomate y cebolla</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">4,50€</span></div>
+        </div>
+      </div>
+
+      <!-- MENÚS -->
+      <div class="menu-grid hidden" id="tab-menus">
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>1. Menú Kebab</h3></div>
+          <p>Kebab + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">7,00€</span><span class="price-label">Grande</span><span class="price">8,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>2. Menú Durum</h3></div>
+          <p>Durum + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">7,00€</span><span class="price-label">Grande</span><span class="price">8,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>3. Menú Durum Gratinado</h3></div>
+          <p>Durum gratinado + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">8,50€</span><span class="price-label">Grande</span><span class="price">9,50€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>4. Plato de Carne</h3></div>
+          <p>Ternera o pollo + ensalada + arroz + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Con bebida</span><span class="price">8,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>5. Menú Falafel</h3></div>
+          <p>Falafel en durum + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">7,00€</span><span class="price-label">Grande</span><span class="price">8,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>6. Menú Lahmacun</h3></div>
+          <p>Ternera o pollo + ensalada + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">9,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>7. Plato Carne y Arroz</h3></div>
+          <p>Ternera o pollo con arroz</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">7,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>8. Gratinado Patatas con Carne</h3></div>
+          <p>Patatas con queso gratinado y carne</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">6,50€</span><span class="price-label">Mediano</span><span class="price">10,00€</span><span class="price-label">Grande</span><span class="price">12,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>9. Patatas con Carne</h3></div>
+          <p>Patatas + carne</p>
+          <div class="price-row"><span class="price-label">Normal</span><span class="price">4,50€</span><span class="price-label">Grande</span><span class="price">6,50€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>11. Menú Burger</h3></div>
+          <p>Burger + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">7,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>12. Menú Nuggets</h3></div>
+          <p>6 nuggets + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">7,00€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>13. Menú Alitas Pollo</h3></div>
+          <p>6 alitas + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">7,50€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>14. Menú Samosas</h3></div>
+          <p>4 samosas de pollo + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">7,50€</span></div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-header"><h3>15. Menú Kebab Roll Pollo</h3></div>
+          <p>4 uds. kebab roll + patatas + refresco</p>
+          <div class="price-row"><span class="price-label">Precio</span><span class="price">7,50€</span></div>
+        </div>
+      </div>
+
+      <p class="menu-note">* Los precios pueden variar. Llámanos para confirmar: <a href="tel:631111930">631 111 930</a></p>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <span class="section-label">Nuestras fotos</span>
+      <h2>Galería</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/chef.jpg" alt="Ali con pizza recién hecha">
+        </div>
+        <div class="gallery-item">
+          <img src="img/shirt.jpg" alt="Ali Pizzeria Kebab">
+        </div>
+        <div class="gallery-item">
+          <img src="img/pizza.jpg" alt="Pizza recién hecha">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="reviews" id="resenas">
+    <div class="container">
+      <span class="section-label">Lo que dicen nuestros clientes</span>
+      <h2>Reseñas</h2>
+      <div class="rating-big">
+        <span class="rating-num">4.8</span>
+        <div>
+          <div class="stars">★★★★★</div>
+          <span class="rating-count">27 reseñas en Google</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid">
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Los kebabs estaban deliciosos, todo muy fresco. Las pizzas también estaban muy ricas y el servicio excelente, la gente muy amable.</p>
+            <span class="reviewer">— Adrián Rodríguez</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Gran servicio, muy limpio y amable. ¡El kebab y la pizza kebab estaban deliciosos!</p>
+            <span class="reviewer">— alvaritovj</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>El kebab fue un 10/10, la salsa estaba deliciosa y el servicio excelente.</p>
+            <span class="reviewer">— David Escobar Cumplido</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>El mejor kebab de la ciudad.</p>
+            <span class="reviewer">— Sandra Díaz Hellín</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Ali es una persona muy amable. Vine desde Logroño y me trató como en casa. Muchísimas gracias.</p>
+            <span class="reviewer">— Zain Shabbir</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Muy buen kebab, muy buena señal, el dueño es un encanto.</p>
+            <span class="reviewer">— Diego Miranda Pedrero</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Nos dejaron mover los ventiladores y poner el fútbol, ¡los mejores!</p>
+            <span class="reviewer">— Adrian Singeorzan</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>El mejor kebab del mundo, qué delicia y el local está limpio. No sé qué tiene ese kebab pero sabe a gloria.</p>
+            <span class="reviewer">— Ossama El hassany</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Muy bueno y sabroso kebab.</p>
+            <span class="reviewer">— Ossama El hassany</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Pedimos alitas de pollo y la pizza mediana de oferta. ¡Todo estuvo genial!</p>
+            <span class="reviewer">— Amina Rabhi</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Very well Food.</p>
+            <span class="reviewer">— Mirza Musa Kaleem Baig</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Un profesional aguantando a todo el mundo con una sonrisa.</p>
+            <span class="reviewer">— Jose Henao Jaramillo</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>¡Muuuuuuy bien! Precio por persona €1–10.</p>
+            <span class="reviewer">— rosina moreira</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Comida: 5 — Servicio: 5.</p>
+            <span class="reviewer">— Leonardo Rodríguez</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Ali pizza, ¡qué rico!</p>
+            <span class="reviewer">— Shawal Hassan</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Buena relación calidad-precio. Precio por persona €10–20.</p>
+            <span class="reviewer">— Tahir Nawaz</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>¡El kebab estaba riquísimo!</p>
+            <span class="reviewer">— Ashfaq Malik</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Camino limpio y buena atención.</p>
+            <span class="reviewer">— Ali Pizzeria</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Precio por persona €20–30. Muy buena experiencia.</p>
+            <span class="reviewer">— Qasim Mushtaq</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars"><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i></div>
+            <p>Precio por persona €1–10. Recomendado.</p>
+            <span class="reviewer">— Mustafa Muhammad</span>
+          </div>
+
+      </div>
+
+      <div class="reviews-more-wrap">
+        <button class="btn-more" id="showMoreBtn">Ver más reseñas <i class="ti ti-chevron-down"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-label">Encuéntranos</span>
+        <h2>Contacto</h2>
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="contact-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></span>
+            <div>
+              <strong>Dirección</strong>
+              <p>C. San Sebastián, 48<br>13600 Alcázar de San Juan, Ciudad Real</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon"><i class="ti ti-phone" aria-hidden="true"></i></span>
+            <div>
+              <strong>Teléfono</strong>
+              <p><a href="tel:631111930">631 111 930</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon"><i class="ti ti-clock" aria-hidden="true"></i></span>
+            <div>
+              <strong>Horario</strong>
+              <p>Llámanos para confirmar el horario</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon"><i class="ti ti-car" aria-hidden="true"></i></span>
+            <div>
+              <strong>Aparcamiento</strong>
+              <p>Aparcamiento gratuito en la calle</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon"><i class="ti ti-credit-card" aria-hidden="true"></i></span>
+            <div>
+              <strong>Pagos</strong>
+              <p>Efectivo y tarjeta aceptados</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/34631111930" class="btn-whatsapp" target="_blank">
+          <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Escríbenos por WhatsApp
+        </a>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1782052851041!6m8!1m7!1s9eWZB4SZ-La-z_ktTNJiRw!2m2!1d39.39557423666303!2d-3.214064948281363!3f60.246277!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Ali Pizzeria Kebab — C. San Sebastián, 48, Alcázar de San Juan</p>
+      <p><a href="tel:631111930">631 111 930</a></p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/34631111930" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

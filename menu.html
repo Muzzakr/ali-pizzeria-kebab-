@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú — Ali Pizzeria Kebab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a1a; }
+
+    .print-btn {
+      position: fixed; top: 16px; right: 16px;
+      background: #c0392b; color: #fff; border: none;
+      padding: 10px 22px; border-radius: 8px; font-size: 15px;
+      font-weight: 700; cursor: pointer; z-index: 100;
+    }
+    .print-btn:hover { background: #a93226; }
+
+    .menu-page { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+
+    .menu-header {
+      text-align: center;
+      background: #c0392b;
+      color: #fff;
+      padding: 32px 24px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+    }
+    .menu-header h1 { font-size: 36px; font-weight: 800; margin-bottom: 6px; }
+    .menu-header p { font-size: 15px; opacity: 0.9; margin-top: 4px; }
+
+    .menu-section { margin-bottom: 36px; }
+    .menu-section h2 {
+      font-size: 20px; font-weight: 800; color: #c0392b;
+      border-bottom: 2px solid #c0392b;
+      padding-bottom: 8px; margin-bottom: 16px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    table { width: 100%; border-collapse: collapse; }
+    tr { border-bottom: 1px solid #f0f0f0; }
+    tr:last-child { border-bottom: none; }
+    td { padding: 10px 8px; font-size: 14px; vertical-align: top; }
+    td:first-child { font-weight: 600; width: 50%; }
+    td.desc { color: #777; font-size: 13px; width: 30%; }
+    td.prices { text-align: right; white-space: nowrap; color: #c0392b; font-weight: 700; width: 20%; }
+
+    .price-tag { display: inline-block; margin-left: 8px; }
+    .price-size { font-size: 11px; color: #999; font-weight: 400; display: block; }
+
+    .footer-note {
+      text-align: center; color: #999; font-size: 13px;
+      margin-top: 40px; padding-top: 24px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    @media print {
+      .print-btn { display: none; }
+      .menu-page { padding: 20px; }
+      body { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">🖨️ Guardar / Imprimir PDF</button>
+
+<div class="menu-page">
+
+  <div class="menu-header">
+    <h1>Ali Pizzeria Kebab</h1>
+    <p>Tél. +34 631 111 930</p>
+    <p>Calle San Sebastián, 48 — 13600 Alcázar de San Juan, Ciudad Real</p>
+  </div>
+
+  <!-- KEBAB -->
+  <div class="menu-section">
+    <h2>🥙 Kebab</h2>
+    <table>
+      <tr>
+        <td>Kebab Ternera, Mixto o Pollo</td>
+        <td class="desc">Pan tostado, ternera/pollo/mixto, lechuga, tomate, cebolla y salsas</td>
+        <td class="prices"><span class="price-size">Normal</span>4,50€ <span class="price-tag"><span class="price-size">Grande</span>5,50€</span></td>
+      </tr>
+      <tr>
+        <td>Durum Ternera, Mixto o Pollo</td>
+        <td class="desc">Pan tostado, ternera/pollo/mixto, lechuga, tomate, cebolla y salsas</td>
+        <td class="prices"><span class="price-size">Normal</span>4,50€ <span class="price-tag"><span class="price-size">Grande</span>5,50€</span></td>
+      </tr>
+      <tr>
+        <td>Solo Carne</td>
+        <td class="desc">Sin kebab o durum, ternera o mixto y salsas</td>
+        <td class="prices"><span class="price-size">Normal</span>5,00€ <span class="price-tag"><span class="price-size">Grande</span>6,00€</span></td>
+      </tr>
+      <tr>
+        <td>Solo Pollo</td>
+        <td class="desc">Sin kebab o durum, pollo y salsas</td>
+        <td class="prices"><span class="price-size">Normal</span>5,50€ <span class="price-tag"><span class="price-size">Grande</span>6,50€</span></td>
+      </tr>
+      <tr>
+        <td>Durum Carne y Patatas</td>
+        <td class="desc">Durum con carne y patatas fritas</td>
+        <td class="prices"><span class="price-size">Normal</span>5,50€ <span class="price-tag"><span class="price-size">Grande</span>6,50€</span></td>
+      </tr>
+      <tr>
+        <td>Durum Gratinado (con verduras)</td>
+        <td class="desc">Durum, lechuga, tomate y cebolla</td>
+        <td class="prices"><span class="price-size">Normal</span>6,50€ <span class="price-tag"><span class="price-size">Grande</span>7,50€</span></td>
+      </tr>
+      <tr>
+        <td>Durum Gratinado Solo Carne</td>
+        <td class="desc">Durum gratinado únicamente con carne</td>
+        <td class="prices"><span class="price-size">Normal</span>7,50€ <span class="price-tag"><span class="price-size">Grande</span>8,50€</span></td>
+      </tr>
+      <tr>
+        <td>Tacos</td>
+        <td class="desc">Tacos de carne al estilo de la casa</td>
+        <td class="prices"><span class="price-size">Normal</span>6,50€ <span class="price-tag"><span class="price-size">Grande</span>7,50€</span></td>
+      </tr>
+      <tr>
+        <td>Kebab Roll Pollo</td>
+        <td class="desc">Roll de pollo con salsas</td>
+        <td class="prices">5,00€</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PIZZA -->
+  <div class="menu-section">
+    <h2>🍕 Pizza</h2>
+    <table>
+      <tr>
+        <td>Pizza Atún</td>
+        <td class="desc">Tomate, orégano, mozzarella y atún</td>
+        <td class="prices"><span class="price-size">Normal</span>11,00€ <span class="price-tag"><span class="price-size">Familiar</span>15,00€</span></td>
+      </tr>
+      <tr>
+        <td>Pizza Margarita</td>
+        <td class="desc">Tomate, orégano y queso mozzarella</td>
+        <td class="prices"><span class="price-size">Normal</span>11,00€ <span class="price-tag"><span class="price-size">Familiar</span>15,00€</span></td>
+      </tr>
+      <tr>
+        <td>Pizza 4 Quesos</td>
+        <td class="desc">Tomate, orégano y cuatro tipos de queso</td>
+        <td class="prices"><span class="price-size">Normal</span>11,00€ <span class="price-tag"><span class="price-size">Familiar</span>15,00€</span></td>
+      </tr>
+      <tr>
+        <td>Pizza Barbacoa</td>
+        <td class="desc">Tomate, orégano, carne picada, pimientos y BBQ</td>
+        <td class="prices"><span class="price-size">Normal</span>11,00€ <span class="price-tag"><span class="price-size">Familiar</span>15,00€</span></td>
+      </tr>
+      <tr>
+        <td>Pizza Carne Picada</td>
+        <td class="desc">Tomate, orégano, carne picada y cebolla</td>
+        <td class="prices"><span class="price-size">Normal</span>11,00€ <span class="price-tag"><span class="price-size">Familiar</span>15,00€</span></td>
+      </tr>
+      <tr>
+        <td>Pizza Kebab ⭐</td>
+        <td class="desc">Tomate, orégano y carne kebab — nuestra especialidad</td>
+        <td class="prices"><span class="price-size">Normal</span>11,00€ <span class="price-tag"><span class="price-size">Familiar</span>15,00€</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- EXTRAS -->
+  <div class="menu-section">
+    <h2>🥗 Extras y Acompañamientos</h2>
+    <table>
+      <tr>
+        <td>Solo Patatas</td>
+        <td class="desc">Patatas fritas</td>
+        <td class="prices"><span class="price-size">Pequeña</span>2,50€ <span class="price-tag"><span class="price-size">Mediana</span>3,50€</span> <span class="price-tag"><span class="price-size">Grande</span>4,50€</span></td>
+      </tr>
+      <tr>
+        <td>Patatas con Carne</td>
+        <td class="desc">Patatas fritas con carne kebab</td>
+        <td class="prices"><span class="price-size">Normal</span>4,50€ <span class="price-tag"><span class="price-size">Box</span>5,00€</span></td>
+      </tr>
+      <tr>
+        <td>Ensalada</td>
+        <td class="desc">Lechuga, tomate, cebolla, olivas y queso</td>
+        <td class="prices">4,50€</td>
+      </tr>
+      <tr>
+        <td>Ensalada de Arroz (con queso)</td>
+        <td class="desc">Lechuga, tomate, cebolla, pepino y arroz</td>
+        <td class="prices"><span class="price-size">Normal</span>5,00€ <span class="price-tag"><span class="price-size">Grande</span>6,00€</span></td>
+      </tr>
+      <tr>
+        <td>Arroz Pollo Frito</td>
+        <td class="desc">Arroz con pollo frito</td>
+        <td class="prices">5,00€</td>
+      </tr>
+      <tr>
+        <td>Samosas Pollo</td>
+        <td class="desc">Samosas de pollo crujientes</td>
+        <td class="prices"><span class="price-size">4 Uds.</span>5,00€</td>
+      </tr>
+      <tr>
+        <td>Alitas de Pollo</td>
+        <td class="desc">Alitas crujientes con salsa a elegir</td>
+        <td class="prices">5,00€</td>
+      </tr>
+      <tr>
+        <td>Nuggets</td>
+        <td class="desc">Nuggets de pollo crujientes</td>
+        <td class="prices"><span class="price-size">8 Uds.</span>5,00€</td>
+      </tr>
+      <tr>
+        <td>Burger Normal</td>
+        <td class="desc">Pan tostado, pollo, lechuga, tomate y cebolla</td>
+        <td class="prices">4,50€</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- MENÚS -->
+  <div class="menu-section">
+    <h2>🍽️ Menús Pak Turk Kebab</h2>
+    <p style="font-size:13px;color:#888;margin-bottom:14px;">Todos los menús incluyen patatas y refresco</p>
+    <table>
+      <tr>
+        <td>1. Menú Kebab</td>
+        <td class="desc">Kebab + patatas + refresco</td>
+        <td class="prices"><span class="price-size">Normal</span>7,00€ <span class="price-tag"><span class="price-size">Grande</span>8,00€</span></td>
+      </tr>
+      <tr>
+        <td>2. Menú Durum</td>
+        <td class="desc">Durum + patatas + refresco</td>
+        <td class="prices"><span class="price-size">Normal</span>7,00€ <span class="price-tag"><span class="price-size">Grande</span>8,00€</span></td>
+      </tr>
+      <tr>
+        <td>3. Menú Durum Gratinado</td>
+        <td class="desc">Durum gratinado + patatas + refresco</td>
+        <td class="prices"><span class="price-size">Normal</span>8,50€ <span class="price-tag"><span class="price-size">Grande</span>9,50€</span></td>
+      </tr>
+      <tr>
+        <td>4. Plato de Carne</td>
+        <td class="desc">Ternera o pollo + ensalada + arroz + patatas + refresco</td>
+        <td class="prices">8,00€</td>
+      </tr>
+      <tr>
+        <td>5. Menú Falafel</td>
+        <td class="desc">Falafel en durum + patatas + refresco</td>
+        <td class="prices"><span class="price-size">Normal</span>7,00€ <span class="price-tag"><span class="price-size">Grande</span>8,00€</span></td>
+      </tr>
+      <tr>
+        <td>6. Menú Lahmacun</td>
+        <td class="desc">Ternera o pollo + ensalada + patatas + refresco</td>
+        <td class="prices">9,00€</td>
+      </tr>
+      <tr>
+        <td>7. Plato Carne y Arroz</td>
+        <td class="desc">Ternera o pollo con arroz</td>
+        <td class="prices">7,00€</td>
+      </tr>
+      <tr>
+        <td>8. Gratinado Patatas con Carne</td>
+        <td class="desc">Patatas con queso gratinado y carne</td>
+        <td class="prices"><span class="price-size">Normal</span>4,50€ <span class="price-tag"><span class="price-size">Mediano</span>10,00€</span> <span class="price-tag"><span class="price-size">Grande</span>12,00€</span></td>
+      </tr>
+      <tr>
+        <td>9. Patatas con Carne</td>
+        <td class="desc">Patatas fritas + carne</td>
+        <td class="prices"><span class="price-size">Normal</span>4,50€ <span class="price-tag"><span class="price-size">Grande</span>6,50€</span></td>
+      </tr>
+      <tr>
+        <td>11. Menú Burger</td>
+        <td class="desc">Burger + patatas + refresco</td>
+        <td class="prices">7,00€</td>
+      </tr>
+      <tr>
+        <td>12. Menú Nuggets</td>
+        <td class="desc">8 nuggets + patatas + refresco</td>
+        <td class="prices">7,00€</td>
+      </tr>
+      <tr>
+        <td>13. Menú Alitas Pollo</td>
+        <td class="desc">6 alitas + patatas + refresco</td>
+        <td class="prices">7,50€</td>
+      </tr>
+      <tr>
+        <td>14. Menú Samosas</td>
+        <td class="desc">4 samosas de pollo + patatas + refresco</td>
+        <td class="prices">7,50€</td>
+      </tr>
+      <tr>
+        <td>15. Menú Kebab Roll Pollo</td>
+        <td class="desc">4 uds. kebab roll + patatas + refresco</td>
+        <td class="prices">7,50€</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <p>* Los precios pueden variar. Llámanos para confirmar: <strong>631 111 930</strong></p>
+    <p style="margin-top:6px;">Ali Pizzeria Kebab — Calle San Sebastián, 48, Alcázar de San Juan</p>
+  </div>
+
+</div>
+</body>
+</html>
