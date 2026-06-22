@@ -19,6 +19,24 @@ document.querySelectorAll('.nav-mobile a').forEach(link => {
   });
 });
 
+// Auto-add category images to menu cards
+const menuImages = {
+  'tab-kebab':  'img/foto-kebab.jpg',
+  'tab-pizza':  'img/foto-pizza.jpg',
+  'tab-extras': 'img/foto-extras.jpg',
+  'tab-menus':  'img/foto-menu.jpg'
+};
+Object.entries(menuImages).forEach(([id, src]) => {
+  const grid = document.getElementById(id);
+  if (!grid) return;
+  grid.querySelectorAll('.menu-card').forEach(card => {
+    const div = document.createElement('div');
+    div.className = 'menu-card-img';
+    div.innerHTML = `<img src="${src}" alt="" loading="lazy">`;
+    card.insertBefore(div, card.firstChild);
+  });
+});
+
 // Reviews show more
 (function() {
   const grid = document.getElementById('reviewsGrid');
